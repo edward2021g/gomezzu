@@ -26,3 +26,21 @@ thead{
     background-color: aquamarine;
     text-align: center;
 }
+
+#foto{
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 60%;
+    margin-right: 0%;
+    margin-bottom:10%;
+}
+
+#DatosBasicos,#Lista-lenguajes{
+    text-align: left;
+    margin-left: 4in;
+}
+
+#tabla-estudios{
+    margin: auto;
+    width: 600pt;
+}
