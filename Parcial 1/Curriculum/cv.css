@@ -1,3 +1,28 @@
 body{
-    background: aqua;
+    background: rgb(113, 161, 161);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#main-container{
+    margin: auto;
+    width: auto;
+}
+
+table{
+    background-color: azure;
+    text-align: left;
+    width: 100%;
+}
+
+th, td{
+    border: solid rgb(0, 0, 0) 1px;
+    border-collapse: collapse;
+    width: fit-content;
+    padding: 0%;
+}
+
+thead{
+    background-color: aquamarine;
+    text-align: center;
 }
