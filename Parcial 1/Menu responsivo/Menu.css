@@ -4,13 +4,67 @@
     padding: 0;
  }
 
-
 .container{
-    width: 100%;
     background-color: black;
+    letter-spacing: 3px;
 }
 
 .Box{
-    margin: auto;
-    border: 2px;
+    border: 3px coral solid;
 }
+
+#Menu{
+    float: left;
+    color: rgb(172, 189, 189);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#Content{
+    color: rgb(14, 13, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    width: calc((100% / 3) * 2 - 30px);
+    float: right;
+    position: relative;
+}
+
+@media only screen and (min-width: 901px)  {
+    
+  }
+
+@media screen and (min-width:501px) and (max-width:900px){
+    /* tablets */
+    .Box p{
+        text-align: center;
+        display: inline;
+    }
+
+    #Content{
+        position: static;
+        width: 100% ;
+    }
+
+    #Menu{
+        position: static;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /* Celulares */ 
+    .Box p{
+        text-align: center;
+    }
+
+    #Content{
+        position: static;
+        width: 100% ;
+    }
+
+    #Menu{
+        position: static;
+        width: 100%;
+    }
+ }
