@@ -5,16 +5,11 @@
     padding: 0ptx;
 }
 
-body{
-
+#mostrar-libros{
+    align-items: flex-end;
 }
 
 
 h1{
     text-align: center;
-}
-
-.Datos-opcionales{
-    border-color: aqua;
-   
 }
