@@ -5,27 +5,66 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <title>Formulario Bootstrap</title>
+       <link rel="stylesheet" href="Formulario.css">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
       </head>
 <body>
+
+    <h1> Sistema personal de inventario de libros</h1>
+
     <div class="container">
-    <form class="form">
+    <form class="row">
+
+      <div class="form-group col-sm-6 col-md-12 col-lg-12">
+            <label for="Titulo" class="control-label">Titulo</label>
+            <input id="idTitulo" type="text" class="form-control" placeholder="Ingrese titulo del libro"/>
+      <div>
+      <div class="form-group col-sm-6 col-md-12 col-lg-12">
+            <label for="nomAutor">Nombre del autor</label>
+            <input id="nomAutor" type="text" class="form-control" placeholder="Ingrese el nombre del autor"/>
+      </div>
+      <div class="form-group col-sm-6 col-md-6 col-lg-12">
+            <label for="Editorial">Editorial</label>
+            <input id="Editorial" type="text" class="form-control" placeholder="Ingrese el nombre de la editorial"/>
+      </div>
+
+    </div>
+
+    <h2>Donde se encuentra </h2>
+
+    <div class=".radio">
+        <div>
+          <label><input type="radio" name="optradio" checked>Biblioteca personal</label>  
+        </div>
+        <div>
+          <label><input type="radio" name="optradio">Libro digital</label> 
+        </div>
+        <div>
+          <label><input type="radio" name="optradio">Libro prestado</label>
+        </div>
+    </div>
+
+
+      <div class="Datos opcionales">
+        <h2> Datos opcionales </h2>
+      <div class="form-group">
+        <label for="numPaginas">Paginas</label>
+        <input id="numPaginas" type="number" class="form-control" placeholder="Numero de paginas"/>
+      </div>
 
       <div class="form-group">
-            <label for="Titulo" class="control-label">ID Cliente</label>
-            <input id="Titulo" type="text" class="form-control" placeholder="00000"/>
-      <div>
-      <div class="form-group">
-            <label for="nomCliente">Nombre</label>
-            <input id="nomCliente" type="text" class="form-control" placeholder="Nombre Ap Paterno Ap Materno"/>
+        <label for="añoPub">Año de publicacion</label>
+        <input id="añoPub" type="number" class="form-control" placeholder="Año de publicacion"/>
       </div>
+
       <div class="form-group">
-            <label for="dirCliente">Direccion</label>
-            <input id="dirCliente" type="text" class="form-control" placeholder="Calle Numero Colonia y Codigo Postal"/>
+        <label for="Genero">Genero</label>
+        <input id="Genero" type="number" class="form-control" placeholder="Genero literario"/>
       </div>
+
       <div class="form-group">
-            <label for="telCliente">Telefono</label>
-            <input id="telCliente" type="text" class="form-control" placeholder="(Lada)-Numero "/>
+        <label for="tipoTematica">Tematica</label>
+        <input id="tipoTematica" type="number" class="form-control" placeholder="Tematica(s) que aborda el libro"/>
       </div>
 
       <button type="submit" class="btn btn-primary">Submit</button>
