@@ -1,30 +1,8 @@
-/*$(document).ready(function()
- {
-                    $("#validar").click(function(){
-                        var usuario=$('#username').val();
-                        var contrasena=$('#password').val();
-
-                     if( usuario='admin' && contrasena=='admin') {
-                        $('#myModal').modal('show');
-                                                              
-                       }
-                     else {
-                        $('.modal-body').html("CONTRASEÑA INCORRECTA :(");
-                        $('#myModal').modal('show');
-                                         }
-              
-             });
-     
-         });
-*/
-
 $('#login-form').submit(function(e){
    e.preventDefault();
    var usuario = $.trim($("#username").val());    
    var password =$.trim($("#password").val()); 
-   alert(usuario);
-   alert(password);
-    /*
+
    if(usuario.length == "" || password == ""){
       Swal.fire({
           type:'warning',
@@ -58,6 +36,5 @@ $('#login-form').submit(function(e){
                }
            }    
         });
-    } 
-*/
+    }     
 });
