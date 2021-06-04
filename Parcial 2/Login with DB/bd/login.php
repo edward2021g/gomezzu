@@ -1,12 +1,12 @@
 <?php
-session_start();
+//session_start();
 
 include_once 'conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-//print_r($conexion);
-
+print_r($conexion);
+/*
 //recepción de datos enviados mediante POST desde ajax
 $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
@@ -27,7 +27,7 @@ if($resultado->rowCount() >= 1){
 
 print json_encode($data);
 $conexion=null;
-
+/*
 //usuarios de pruebaen la base de datos
 //usuario:admin pass:admin
 //usuario:demo pass:demo
