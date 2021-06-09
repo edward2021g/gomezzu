@@ -1,6 +1,6 @@
 $('document').ready(function () {
 
-    $.post('jsgrid.php', function (ret) {
+    $.post('./GetLibros.php', function (ret) {
     
             if ( ret['resultado'] !=0 ) {
                  alert('Error de carga');
