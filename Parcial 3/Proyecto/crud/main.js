@@ -25,9 +25,8 @@ tablaLibros = $('#tablaLibros').DataTable({
 });     
 
 var fila; //captura fila
-//submit para el Alta y Actualización
 $('#formLibros').submit(function(e){                         
-    e.preventDefault(); //evita el comportambiento normal del submit, es decir, recarga total de la página
+    e.preventDefault(); //evita la recarga total de la página
     ID = $.trim($('#ID').val());    
     Titulo = $.trim($('#Titulo').val());
     Autor = $.trim($('#Autor').val());    
@@ -60,7 +59,7 @@ $("#btnNuevo").click(function(){
     $(".modal-header").css( "background-color", "#17a2b8");
     $(".modal-header").css( "color", "white" );
     $(".modal-title").text("Alta de Libro");
-    $('#modalCRUD').modal('show');	    
+    $('#modalCRUD').modal('show');	 
 });
 
 //Editar        

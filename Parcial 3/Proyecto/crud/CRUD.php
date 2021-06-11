@@ -39,17 +39,16 @@ if($_SESSION["s_usuario"] === null){
                       <h1 class="display-4 text-center">¡Bienvenido al sistema!</h1>
                       <h2 class="text-center">Usuario: <span class="badge badge-primary"><?php echo $_SESSION["s_usuario"];?></span></h2>    
                       <p class="lead text-center">Esta es la página donde podras administrar todos los libros.</p>
-                      <hr class="my-4">      
+                          
 
-                                              <!--   Inicio tabla -->
-                                            <div class="container">
+                            <!--   Inicio tabla -->
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">            
                                     <button id="btnNuevo" type="button" class="btn btn-primary" data-toggle="modal"> Agregar libro </button> 
                                     </div>    
                                 </div>    
                             </div>    
-                            <br>  
 
                             <div class="container caja">
                                 <div class="row">
@@ -85,112 +84,118 @@ if($_SESSION["s_usuario"] === null){
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <!--
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                        </button> -->
                                     </div>
-                                <form id="formLibros">    
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                            <div class="form-group">
-                                            <label for="" class="col-form-label">ID:</label>
-                                            <input type="number" class="form-control" id="ID">
-                                            </div>
-                                            </div>
-                                            <div class="col-lg-9">
-                                            <div class="form-group">
-                                            <label for="" class="col-form-label">Titulo</label>
-                                            <input type="text" class="form-control" id="Titulo">
-                                            </div> 
-                                            </div>    
-                                        </div>
-                                        <div class="row"> 
-                                            <div class="col-lg-6">
-                                            <div class="form-group">
-                                            <label for="" class="col-form-label">Autor</label>
-                                            <input type="text" class="form-control" id="Autor">
-                                            </div>               
-                                            </div>
-                                            <div class="col-lg-6">
-                                            <div class="form-group">
-                                            <label for="" class="col-form-label">Editorial</label>
-                                            <input type="text" class="form-control" id="Editorial">
-                                            </div>
-                                            </div>  
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Paginas</label>
-                                                <input type="number" min="1" pattern="^[0-9]+" class="form-control" id="Paginas">
+
+                                    <form id="formLibros">    
+                                        <div class="modal-body">
+                                            <div class="row"> <!-- Renglon 1 -->
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">ID:</label>
+                                                        <input type="number" class="form-control" id="ID">
+                                                    </div>
                                                 </div>
+
+                                                <div class="col-lg-9">
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Titulo</label>
+                                                        <input type="text" class="form-control" id="Titulo">
+                                                    </div> 
+                                                </div>    
+                                            </div>
+
+                                            <div class="row"> <!-- Renglon 2 -->
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Autor</label>
+                                                        <input type="text" class="form-control" id="Autor">
+                                                    </div>               
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Editorial</label>
+                                                        <input type="text" class="form-control" id="Editorial">
+                                                    </div>
+                                                </div>  
+                                            </div>
+
+                                            <div class="row"> <!-- Renglon 3 -->
+                                                <div class="col-lg-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Paginas</label>
+                                                        <input type="number" min="1" pattern="^[0-9]+" class="form-control" id="Paginas">
+                                                    </div>
+                                                </div>    
+                                                <div class="col-lg-3">    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Año Publi.</label>
+                                                        <input type="number" min="1800" max="2021" class="form-control" id="Anio_Publicacion">
+                                                    </div>            
+                                                </div>  
+
+                                                <!-- Diferentes opciones de ubicacion -->
+                                                <div class="col-lg-3">    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Ubicación</label>
+                                                        <select class="custom-select" id="Ubicacion">
+                                                            <option value="Fisico">Físico</option>
+                                                            <option value="Digital">Digital</option>
+                                                        </select>
+                                                    </div>            
+                                                </div>   
+
+                                                <!-- Diferentes opciones de formato -->
+                                                <div class="col-lg-3">    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Formato</label>
+                                                        <select class="custom-select" id="Formato">
+                                                            <option value="Pasta dura">Pasta dura</option>
+                                                            <option value="Pasta blanda">Pasta blanda</option>
+                                                            <option value="PDF">PDF</option>
+                                                            <option value="EPUB">EPUB</option>
+                                                            <option value="MOBI">MOBI</option>
+                                                            <option value="Otro">Otro</option>
+                                                        </select>
+                                                    </div>            
+                                                </div>   
                                             </div>    
-                                            <div class="col-lg-3">    
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Año Publi.</label>
-                                                <input type="number" min="1800" max="2021" class="form-control" id="Anio_Publicacion">
-                                                </div>            
-                                            </div>  
 
-                                            <!-- Diferentes opciones de ubicacion -->
-                                            <div class="col-lg-3">    
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Ubicación</label>
-                                                    <select class="custom-select" id="Ubicacion">
-                                                    <option value="Fisico">Físico</option>
-                                                    <option value="Digital">Digital</option>
-                                                    </select>
-                                                </div>            
-                                            </div>   
+                                            <div class="row"> <!-- Renglon 4 -->
+                                                <!-- Diferentes opciones de genero -->
+                                                <div class="col-lg-6">    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Genero</label>
+                                                        <select class="custom-select" id="Genero">
+                                                            <option value="Novela">Novela</option>
+                                                            <option value="Juvenil">Juvenil</option>
+                                                            <option value="Ficción">Ficción</option>
+                                                            <option value="No ficción">No ficción</option>
+                                                            <option value="Novela negra">Novela negra</option>
+                                                            <option value="Novela historica">Novela historica</option>
+                                                        </select>
+                                                    </div>            
+                                                </div>    
 
-                                            <!-- Diferentes opciones de formato -->
-                                            <div class="col-lg-3">    
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Formato</label>
-                                                    <select class="custom-select" id="Formato">
-                                                    <option value="Pasta dura">Pasta dura</option>
-                                                    <option value="Pasta blanda">Pasta blanda</option>
-                                                    <option value="PDF">PDF</option>
-                                                    <option value="EPUB">EPUB</option>
-                                                    <option value="MOBI">MOBI</option>
-                                                    <option value="Otro">Otro</option>
-                                                    </select>
-                                                </div>            
-                                            </div>   
-
-                                            <!-- Diferentes opciones de formato -->
-                                            <div class="col-lg-6">    
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Genero</label>
-                                                <select class="custom-select" id="Genero">
-                                                    <option value="Novela">Novela</option>
-                                                    <option value="Juvenil">Juvenil</option>
-                                                    <option value="Ficción">Ficción</option>
-                                                    <option value="No ficción">No ficción</option>
-                                                    <option value="Novela negra">Novela negra</option>
-                                                    <option value="Novela historica">Novela historica</option>
-                                                    </select>
-                                                </div>            
+                                                <div class="col-lg-6">    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-form-label">Comentarios</label>
+                                                        <input type="text" class="form-control" id="Cometarios">
+                                                    </div>            
+                                                </div>      
                                             </div>    
-
-                                            <div class="col-lg-6">    
-                                                <div class="form-group">
-                                                <label for="" class="col-form-label">Comentarios</label>
-                                                <input type="text" class="form-control" id="Cometarios">
-                                                </div>            
-                                            </div>      
-                                        </div>                
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
-                                    </div>
-                                </form>    
+                                        </div>
+                                    
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                                                <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                                            </div>
+                                    </form>    
                                 </div>
                             </div>
                         </div>   
                         <!--   Fin tabla -->
+
                         <br> </br>
                       <a class="btn btn-danger btn-lg" href="../bd/logout.php" role="button">Cerrar Sesión</a>
                     </div>
@@ -208,7 +213,6 @@ if($_SESSION["s_usuario"] === null){
     <script type="text/javascript" src="../assets/datatables/datatables.min.js"></script>    
      
     <script type="text/javascript" src="main.js"></script>  
-    
     
   </body>
 </html>
