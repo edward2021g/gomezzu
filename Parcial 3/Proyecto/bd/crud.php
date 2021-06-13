@@ -9,7 +9,6 @@ $Autor = (isset($_POST['Autor'])) ? $_POST['Autor'] : '';
 $Editorial = (isset($_POST['Editorial'])) ? $_POST['Editorial'] : '';
 $Paginas = (isset($_POST['Paginas'])) ? $_POST['Paginas'] : '';
 $Anio_Publicacion = (isset($_POST['Anio_Publicacion'])) ? $_POST['Anio_Publicacion'] : '';
-
 $Ubicacion = (isset($_POST['Ubicacion'])) ? $_POST['Ubicacion'] : '';
 $Formato = (isset($_POST['Formato'])) ? $_POST['Formato'] : '';
 $Genero = (isset($_POST['Genero'])) ? $_POST['Genero'] : '';

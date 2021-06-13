@@ -47,8 +47,10 @@ CREATE TABLE IF NOT EXISTS `libros` (
 --
 -- Volcado de datos para la tabla `libros`
 --
-INSERT INTO `libros` (`ID`, `Titulo`, `Autor`, `Editorial`, `Paginas`, `Anio_Publicacion`, `Ubicacion`, `formato`, `genero`, `Cometarios`) VALUES
-(1, 'El retrato de Dorian Gray', 'OSCAR WILDE', 'GRUPO EDITORIAL TOMO',621,null,'fisico',null,null,null),
-(2, 'La insoportable levedad del ser', 'MILAN KUNDERA', 'TUSQUETS EDITORES',336,null,'fisico',null,null,null),
-(3, 'LA ULTIMA SALIDA', 'FEDERICO AXAT', 'DESTINO',544,null,'fisico',null,null,null),
-(4, 'LOS JUEGOS DEL HAMBRE', 'SUZANNE COLLINS', 'OCEANO',400,null,'fisico',null,null,null);
+INSERT INTO `libros` (`ID`, `Titulo`, `Autor`, `Editorial`, `Paginas`, `Anio_Publicacion`, `Ubicacion`, `Formato`, `Genero`, `Cometarios`) VALUES
+(1, 'El retrato de Dorian Gray', 'OSCAR WILDE', 'GRUPO EDITORIAL TOMO', 123, 1999, 'Fisico', 'Pasta blanda', 'Juvenil', '123'),
+(2, 'La insoportable levedad del ser', 'MILAN KUNDERA', 'TUSQUETS EDITORES', 336, 2020, 'Digital', 'PDF', 'Ficcion', 'libro digital'),
+(3, 'LA ULTIMA SALIDA', 'FEDERICO AXAT', 'DESTINO', 544, 2012, 'Fisico', 'Pasta blanda', 'Novela negra', 'prueba'),
+(4, 'LOS JUEGOS DEL HAMBRE', 'SUZANNE COLLINS', 'OCEANO', 400, 2010, 'Fisico', 'Pasta blanda', 'Novela', 'n'),
+(22, 'El retrato de Dorian Gray', 'OSCAR WILDE', 'S.L.U. ESPASA LIBROS', 284, 1999, 'Fisico', 'Pasta dura', 'Novela', 'edicion especial'),
+(66, 'libro', 'jose', 'jose', 45, 2021, 'Fisico', 'Pasta dura', 'Novela', 'prueba 2');

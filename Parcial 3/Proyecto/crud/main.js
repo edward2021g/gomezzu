@@ -2,7 +2,7 @@ $(document).ready(function() {
 var ID, opcion;
 opcion = 4;
     
-tablaLibros = $('#tablaLibros').DataTable({  
+tablaLibros = $('#tablaLibros').DataTable({  //llena la tabla
     "ajax":{            
         "url": "../bd/crud.php", 
         "method": 'POST', //uso del metodo POST
@@ -25,7 +25,7 @@ tablaLibros = $('#tablaLibros').DataTable({
 });     
 
 var fila; //captura fila
-$('#formLibros').submit(function(e){                         
+$('#formLibros').submit(function(e){   //llena el modal                       
     e.preventDefault(); //evita la recarga total de la página
     ID = $.trim($('#ID').val());    
     Titulo = $.trim($('#Titulo').val());
